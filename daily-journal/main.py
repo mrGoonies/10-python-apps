@@ -1,6 +1,13 @@
 from typing import Optional
 from time import sleep
 
+def list_entries():
+    pass
+
+
+def add_entry():
+    pass
+
 
 def event_loop():
     cmd: Optional[str] = None
