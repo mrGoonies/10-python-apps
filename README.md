@@ -13,6 +13,10 @@ This repository contains various projects designed to help Junior or Trainee dev
 - **guess-that-number**
   - Use of control structure and use of native python libraries such as *random*.
 
+- **daily-journal**
+  - Import functions from other files.
+  - Using File I/O correctly (automatic closing).
+
 ## Topics Learned
 1. Enumerate: 
     - It is a built-in function that allows you to iterate over a sequence (such as a list, tuple, or string) and obtain both the element and its index on each iteration. This eliminates the need to maintain a separate accountant.
