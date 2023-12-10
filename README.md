@@ -17,6 +17,8 @@ This repository contains various projects designed to help Junior or Trainee dev
 1. Enumerate: 
     - It is a built-in function that allows you to iterate over a sequence (such as a list, tuple, or string) and obtain both the element and its index on each iteration. This eliminates the need to maintain a separate accountant.
 
+2. Import features from other files correctly:
+  - Use the word *import file_name* and access the functions of that file using the dot notation. This facilitates understanding and explicitness when reading and understanding code.
 
 
 ## Requirements
