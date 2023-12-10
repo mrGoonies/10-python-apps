@@ -1,5 +1,6 @@
 from typing import Optional, List
 from time import sleep
+import journal  # declarative way to import and access functionalities of a module
 
 
 def list_entries(data) -> None:
@@ -10,7 +11,7 @@ def list_entries(data) -> None:
     else:
         print("Your journal entries: ")
         for idx, entry in enumerate(reversed_data):
-            print(f"*[{idx+1}] {entry}\n")
+            print(f"*[{idx + 1}] {entry}\n")
 
 
 def add_entry(data) -> None:
@@ -25,12 +26,14 @@ def event_loop():
     while cmd != "X":
         print("What do you want to do with your Journal?")
         cmd = input("[L]ist entries, [A]dd an entry, E[x]it: \n>>> ").upper().strip()
+        first_letter = cmd[0]
 
-        if cmd == "L":
+        if first_letter == "L":
             list_entries(list_of_journal_data)
-        elif cmd == "A":
-            add_entry(list_of_journal_data)
-        elif cmd == "X":
+        elif first_letter == "A":
+            journal_entry = input("Type your entry, <ENTER> to exit: \n>>> ")
+            journal.add_entry(journal_entry, list_of_journal_data)
+        elif first_letter == "X":
             print("Exiting...")
             sleep(2)
         else:
