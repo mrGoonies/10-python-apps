@@ -3,8 +3,21 @@ import os
 import time
 
 
-def load_journal() -> list:
-    pass
+def load_journal(name: str) -> List[str]:
+    """
+    Load the journal from a file.
+    :param name: name of the journal.
+    :return: list of entries.
+    """
+    data: List[str] = list()
+    filename = get_full_path(name)
+
+    if os.path.exists(filename):
+        with open(filename) as file:
+            for entry in file.readlines():
+                data.append(entry.rstrip("\n"))
+
+    return data
 
 
 def save_journal(name: str, list_of_entries: List[str]) -> None:
@@ -32,7 +45,7 @@ def get_full_path(name: str) -> str:
     :param name: name of the journal.
     :return: full path of the journal file in a string.
     """
-    filename = os.path.abspath(os.path.join("./journals", "{}.jrl".format(name)))
+    filename = os.path.abspath(os.path.join("./journals", name + '.jrl'))
 
     return filename
 

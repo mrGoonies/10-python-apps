@@ -33,6 +33,7 @@ def event_loop():
         elif first_letter == "A":
             journal_entry = input("Type your entry, <ENTER> to exit: \n>>> ")
             journal.add_entry(journal_entry, list_of_journal_data)
+            journal.save_journal("default", list_of_journal_data)
         elif first_letter == "X":
             print("Exiting...")
             sleep(2)
