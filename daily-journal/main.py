@@ -1,5 +1,6 @@
-from typing import Optional
+from typing import Optional, List
 from time import sleep
+
 
 def list_entries():
     pass
@@ -11,6 +12,7 @@ def add_entry():
 
 def event_loop():
     cmd: Optional[str] = None
+    list_of_journal_data: List[str] = list()
 
     while cmd != "X":
         print("What do you want to do with your Journal?")
