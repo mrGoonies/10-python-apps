@@ -2,12 +2,18 @@ from typing import Optional, List
 from time import sleep
 
 
-def list_entries():
-    pass
+def list_entries(data) -> None:
+    if len(data) == 0:
+        print("Your journal is empty.")
+    else:
+        print("Your journal entries: ")
+        for entry in data:
+            print(entry)
 
 
-def add_entry():
-    pass
+def add_entry(data) -> None:
+    data.append(input("Type your entry, <ENTER> to exit: \n>>> "))
+    print("Entry added.")
 
 
 def event_loop():
@@ -19,9 +25,9 @@ def event_loop():
         cmd = input("[L]ist entries, [A]dd an entry, E[x]it: \n>>> ").upper().strip()
 
         if cmd == "L":
-            print("Listing...")
+            list_entries(list_of_journal_data)
         elif cmd == "A":
-            print("Adding...")
+            add_entry(list_of_journal_data)
         elif cmd == "X":
             print("Exiting...")
             sleep(2)
