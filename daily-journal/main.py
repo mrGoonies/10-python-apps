@@ -3,12 +3,14 @@ from time import sleep
 
 
 def list_entries(data) -> None:
+    reversed_data = reversed(data)
+
     if len(data) == 0:
-        print("Your journal is empty.")
+        print("Your journal is empty.\n")
     else:
         print("Your journal entries: ")
-        for entry in data:
-            print(entry)
+        for idx, entry in enumerate(reversed_data):
+            print(f"*[{idx+1}] {entry}\n")
 
 
 def add_entry(data) -> None:
