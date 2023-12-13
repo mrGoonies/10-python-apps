@@ -1,3 +1,8 @@
+import collections
+
+Local = collections.namedtuple("Local", "city country")
+
+
 def validate_inputs(city: str, country: str):
     """Validate the inputs from the user
 
@@ -10,7 +15,8 @@ def validate_inputs(city: str, country: str):
 
     else:
         print(f"You selected {city}, {country}")
-        return country, city
+
+        return Local(city, country)
 
 
 def get_location_user():
@@ -25,14 +31,14 @@ def get_location_user():
     return validate_inputs(user_city.title(), user_country.upper())
 
 
-def convert_plaintext_location(location_text: tuple) -> str:
+def convert_plaintext_location(location_text) -> str:
     """Convert the location tuple into a string
 
     :param location_text: tuple of strings (country, city)
     :return: string of location in the format "city, country"
     """
 
-    location_text = f"{location_text[0]}, {location_text[1]}"
+    location_text = f"{location_text.city}, {location_text.country}"
     return location_text
 
 
