@@ -24,6 +24,8 @@ This repository contains various projects designed to help Junior or Trainee dev
 2. Import features from other files correctly:
   - Use the word *import file_name* and access the functions of that file using the dot notation. This facilitates understanding and explicitness when reading and understanding code.
 
+3. namedtuple:
+  - Namedtuples facilitate access to the values of a tuple which makes the code more readable, since we access the values by their tag instead of being able to access the values by their location within the data structure.
 
 ## Requirements
 
