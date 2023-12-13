@@ -22,7 +22,7 @@ def get_location_user():
     user_city = input("Enter your city: \n>>> ")
     user_country = input("Enter your country: \n>>> ")
 
-    return validate_inputs(user_city, user_country)
+    return validate_inputs(user_city.title(), user_country.upper())
 
 
 def convert_plaintext_location(location_text: tuple) -> str:
