@@ -1,6 +1,12 @@
 import collections
+import requests
 
 Local = collections.namedtuple("Local", "city country")
+
+
+def get_weather(location: collections.namedtuple):
+    url: str = (f"https://weather.talkpython.fm/api/weather?city={location.city}&country={location.country}&units"
+                f"=metric")
 
 
 def validate_inputs(city: str, country: str):
