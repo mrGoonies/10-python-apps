@@ -1,1 +1,9 @@
 request
+pip~=21.2.4
+wheel~=0.37.0
+certifi~=2023.11.17
+idna~=3.6
+urllib3~=2.1.0
+setuptools~=58.0.4
+future~=0.18.2
+requests~=2.31.0
