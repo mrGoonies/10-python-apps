@@ -17,6 +17,10 @@ This repository contains various projects designed to help Junior or Trainee dev
   - Import functions from other files.
   - Using File I/O correctly (automatic closing).
 
+- **weather-app**
+  - Use of external libraries such as *requests* and *beautifulsoup4*.
+  - Use of the *namedtuple* function.
+
 ## Topics Learned
 1. Enumerate: 
     - It is a built-in function that allows you to iterate over a sequence (such as a list, tuple, or string) and obtain both the element and its index on each iteration. This eliminates the need to maintain a separate accountant.
@@ -26,6 +30,9 @@ This repository contains various projects designed to help Junior or Trainee dev
 
 3. namedtuple:
   - Namedtuples facilitate access to the values of a tuple which makes the code more readable, since we access the values by their tag instead of being able to access the values by their location within the data structure.
+
+4. ```python __file__ ```:
+  - The __file__ variable contains the absolut path to the file that is being executed. This is useful when you want to access files that are in the same directory as the file that is being executed.
 
 ## Requirements
 

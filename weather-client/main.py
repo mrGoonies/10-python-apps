@@ -19,7 +19,7 @@ def assign_json_values_to_tuple(json_response: dict) -> None:
         condition=json_response.get("weather").get("description")
     )
 
-    print(f"The weather in {weather.location} is {weather.temp} degrees and {weather.condition}")
+    print(f"The weather in {weather.location} is {weather.temp}°C degrees and {weather.condition}")
 
 
 def get_weather(locations_text: str) -> dict:
