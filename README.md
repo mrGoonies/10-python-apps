@@ -34,6 +34,10 @@ This repository contains various projects designed to help Junior or Trainee dev
 4. ```python __file__ ```:
   - The __file__ variable contains the absolut path to the file that is being executed. This is useful when you want to access files that are in the same directory as the file that is being executed.
 
+5. subprocess library:
+  - The subprocess library allows you to run commands on the operating system. This is useful when you want to run a command that is not native to Python, such as opening a file in the default text editor.
+  - The ```python subprocess.run() ``` function allows you to run a command and wait for it to finish before continuing with the execution of the program.
+
 ## Requirements
 
 - Python 3.9
