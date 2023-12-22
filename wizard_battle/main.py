@@ -3,14 +3,16 @@ from actors import Wizard, Creature
 
 
 creatures: list = [
-    Creature(),
-    Creature(),
-    Creature(),
-    Creature(),
-    Creature(),
-    Creature(),
+    Creature("Evil Wizard", 120),
+    Creature("Dragon", 50),
+    Creature("Wolf", 10),
+    Creature("Toad", 1),
+    Creature("Tiger", 75),
+    Creature("Bat", 5)
 ]
-hero: Wizard = Wizard()
+print(creatures)
+
+hero: Wizard = Wizard("Kingdom", 75)
 
 
 def main():
