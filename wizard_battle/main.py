@@ -1,9 +1,20 @@
 import time
+from actors import Wizard, Creature
+
+
+creatures: list = [
+    Creature(),
+    Creature(),
+    Creature(),
+    Creature(),
+    Creature(),
+    Creature(),
+]
+hero: Wizard = Wizard()
 
 
 def main():
     game_loop()
-    pass
 
 
 def game_loop():
