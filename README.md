@@ -20,6 +20,11 @@ This repository contains various projects designed to help Junior or Trainee dev
 - **weather-app**
   - Use of external libraries such as *requests* and *beautifulsoup4*.
   - Use of the *namedtuple* function.
+ 
+- **LOL Cat**
+  - Download content from an external API.
+  - Interact with the operating system file handler from Python.
+  - 
 
 ## Topics Learned
 1. Enumerate: 
