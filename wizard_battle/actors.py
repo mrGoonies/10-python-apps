@@ -3,6 +3,13 @@ class Wizard:
         self.name = name
         self.level = level
 
+    def attack(self, creature):
+        """Wizard attacks creature
+        :param creature: Creature name
+        :return: None
+        """
+        print(f"The wizard {self.name} attacks {creature}!")
+
 
 class Creature:
     # Initializer / Instance Attributes
