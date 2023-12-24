@@ -1,6 +1,6 @@
+import random
 import time
 from actors import Wizard, Creature
-
 
 creatures: list = [
     Creature("Evil Wizard", 120),
@@ -20,8 +20,11 @@ def main():
 
 
 def game_loop():
-
     while True:
+        active_creature: Creature = random.choice(creatures)
+        print(f"A {active_creature.name} of level {active_creature.level}"
+              f"has appeared from a dark and foggy forest...\n")
+
         cmd_input = input("Do you [a]ttack, [r]unaway, or [l]ook around?\n>>> ").lower().strip()
 
         if cmd_input == "a":
@@ -37,7 +40,6 @@ def game_loop():
                 print("Exiting...")
                 time.sleep(2)
                 break
-
 
 
 if __name__ == "__main__":
